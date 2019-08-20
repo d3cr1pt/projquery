@@ -4,8 +4,21 @@
         <meta charset="UTF-8">
         <title>Projeto jQuery</title>
         <script src="js/jquery.js"></script>
+        <script>
+        //Antiga sintaxe
+        $(document).ready(function(){
+            $("p").click(function(){
+                $("h1").toggle();        
+            });
+        });
+        //Nova sintaxe
+        $(function(){
+
+        });
+        </script>
     </head>
     <body>
-        
+        <h1>Exemplo 1</h1>
+        <p>Clique aqui</p>
     </body>
 </html>
